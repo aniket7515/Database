@@ -1,0 +1,43 @@
+show dbs --> use to show the existing databases
+
+
+use {name of database}-->new database is created
+
+To know in which database we are currently in 
+
+|
+| 
+command : db 
+
+
+Create Operations
+
+db.collection.insertOne()
+db.collection.insertMany()
+
+show collections ---> It displays all the collections in the current data base
+
+to find data in our collection --
+
+command: db.products.find()
+
+and to find specific 
+
+command :  db.products.find({name:"Pencil"})
+
+to find like price grater than 1 data 
+
+> db.products.find({price:{$gt:1}})
+
+$gt--> represent greater than
+
+
+CRUD Operations in MongoDB
+
+Update Operation 
+
+
+db.products.updateOne({_id:1},{$set:{stock:32}})
+
+
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
